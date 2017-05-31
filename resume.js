@@ -5,50 +5,49 @@ console.log("Interests:");
 console.log("*Fishing");
 console.log("*Fishing");
 console.log("*Did I mention I like to fish?");
+console.log();
 
 console.log("My Previous Experience:");
 
 function displayPosition(jobTitle, companyName, description) {
-    console.log("Stryker Mechanic");
-    console.log("at");
-    console.log("General Dynamics");
-    console.log("-");
-    console.log("Repaired combat-damaged vehicles");
-}
- displayPosition();
+  console.log("* " + jobTitle + "at " + companyName + "- " + description);
+   
+} 
+displayPosition("Stryker Mechanic", "Generral Dynamics", "Repaired combat-damaged vehicles");
 
-function displayPosition(jobTitle, companyName, description) {
-    console.log("Astronaut");
-    console.log("at");
-    console.log("NASA");
-    console.log("-");
-    console.log("Tested flight suits")
-}
-displayPosition();
+displayPosition("Astronaut", "NASA", "Tested flight suits");
 
-function displayPosition(jobTitle, companyName, description) {
-    console.log("Disc Jockey");
-    console.log("at");
-    console.log("U.S. Talent");
-    console.log("-");
-    console.log("Played dance music in night clubs");
+displayPosition("Disc Jockey", "U.S. Talent", "Played dance music in night clubs");
+
+console.log();
+
+console.log("My Skills");
+
+function displaySkill(skillName, isCool) {
+    if (isCool === true) {
+        console.log("* " + "BAM: " + skillName);
+        } else {
+            console.log("* " + skillName);
+        }
 }
-displayPosition();
+displaySkill("I can twist to anything", true);
+displaySkill("Change a cross-over tube on a Cat C-7 blindfolded", false)
+displaySkill("Taught myself ho to throw a ball right handed", true)
 
     console.log("My skills:");
     console.log("BAM: I can twist to anything");
     console.log("Change a cross-over tube on a Cat C-7 blindfolded");
     console.log("BAM: Taught myself how to throw right-handed");
 
-// var cool = "Bam";
-// function displaySkill(name, cool) {
-// if (cool) {
-// console.log("BAM:");
-// } else {
-// }
-// }
+var cool = "Bam";
+function displaySkill(name, cool) {
+if (cool) {
+console.log("BAM:");
+} else {
+}
+}
 
-// displaySkill();
+displaySkill();
 
 
 
@@ -74,3 +73,27 @@ displayPosition();
 //   { return "Get some more shut eye!";}
 // };
 // sleepCheck(10);
+
+
+// var people = [
+//     {
+//         name: 'John Doe',
+//         age: 27
+//     },
+//     {
+//         name: 'Jane Doe',
+//         age: 26
+//     }
+// ]
+// console.log(people)
+
+// var person = {
+//     name: 'John Doe',
+//     age: 27,
+//     isInstructor: true
+// };
+// for (var p in person) {
+//     console.log(p);
+//     console.log(person[p]);
+// }
+
